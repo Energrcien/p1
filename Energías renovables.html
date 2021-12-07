@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<blockquote class="bc">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Energ&iacute;as renovables</title>
+	<link rel="icon" href="https://i.ibb.co/6PbbkfM/Icon.jpg">
+
+</head>
+<!--STILOS-->
+<style type="text/css">
+	
+	/*CSS PARA MENÚ*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+
+}
+/*Barra de bajar, solo para GOOGLE*/
+body::-webkit-scrollbar{
+	width: 10px;
+	background: url('https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+body::-webkit-scrollbar-thumb{
+	background: gray;
+	border-radius: 10px;
+	border-right: none;
+}
+/*Menú responsive*/
+	
+.sep{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+/*Menú*/
+.h{
+	width: 69%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.cont{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+
+}
+
+.cont .men1{
+	float: left;
+	line-height: 100px;
+}
+.cont .men1{
+	right: 50px;
+	text-align: center;
+}
+.cont .men1 label{
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.cont .menu{
+	float: right;
+	line-height: 100px;
+}
+.cont .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: white;
+	transition: all 1.0s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+
+
+}
+.cont .menu a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+
+/*----------------------------------------------------*/
+/*Inicio menú responsive 2*/
+
+#men1{
+	display: none;
+
+}
+.cont-men{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 160%;
+	height: 100vh;
+	top: 0;
+	left: 9;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#men1:checked ~ .cont-men{
+	opacity: 1;
+	visibility: visible;
+}
+.con-men{
+	width: 100%;
+	max-width: 250px;
+	background: #1c1c1c;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#men1:checked ~ .cont-men .con-men{
+	transform: translateX(0px);
+}
+.con-men nav{
+	transform: translateY(15px);
+}
+.con-men nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+
+.con-men nav a:hover{
+	border-left: 5px solid #c7c7c7;
+	background: #1f1f1f;
+}
+
+.con-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+}
+#men2{
+	float: left;
+	color: red;
+	cursor: pointer;
+
+}
+abbr{
+	text-decoration: none;
+}
+#Mov_m2 label{
+	right: 150px;
+}
+@media (max-width: 2000px){
+	.men1{
+		display: none;
+	}
+	#aviso{
+		display: none;
+	}
+}
+@media and only screen (max-width:  720px){
+	.menu{
+		display: none;
+	}
+	.men1{
+		display: block;
+	}
+#aviso{
+	display: none;
+}
+}
+@media (max-width: 704px){
+	#aviso{
+		display: inline-block;
+		background: black;
+		opacity: 79%;
+		color: whitesmoke;
+width: 100%;
+height: 1000px;
+position: fixed;
+transition: 500ms all ease;
+	}
+	.menu{
+		display: none;
+	}
+}
+@media (max-width:  1112px){
+	.h{
+	width: 78%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+}
+@media (max-width:  745px){
+	.h{
+	width: 88%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+}
+/*Parte 2*/
+/***********************************/
+/*Titulo 1*/
+#ttle1{
+	font:  oblique bold 120% cursive;
+	color: black;
+	font-size: 200%;
+}
+body{
+background-repeat: no-repeat;
+background-position: center;
+backface-visibility: initial;
+background-size: auto !important;
+
+
+
+}
+.bc{
+	background: url('https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	height: 1000px;
+}
+.tit1{
+	margin: 2px;
+}
+#txt1{
+ display: block;
+  width: 990px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;    
+  background-color: white;
+  color: black;
+font-size: 20px;
+}
+.txt1{
+
+}
+.Siguiente{
+	border: 2px solid black;
+	pointer-events: all;
+	cursor: pointer;
+	background-color: blue;
+}
+.Siguiente:hover{
+	border: 2px solid blue;
+	pointer-events: all;
+	cursor: pointer;
+	background-color: green;
+	color: black;
+}
+/*PARTE 3*/
+/****************************************/
+.slide{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	height: 580px;
+}
+
+.slide ul {
+display: flex;
+padding: 0;
+width: 400%;
+animation: cambio 20s infinite;
+}
+
+.slide li{
+	list-style: none;
+	width: 100%;
+}
+
+.slide img {
+	width: 100%;
+}
+/*Cambio de imagen*/
+@keyframes cambio{
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+
+}
+
+/*Configuración imagenes*/
+#s1{
+}
+#s2 img{
+
+}
+#s3{
+
+}
+#s4{
+
+}
+
+</style>
+<!--Fin stilos-->
+<body>
+
+	<!--AVISO-->
+	<h1 id="aviso">LA PANTALLA YA EST&Aacute; MUY PEQUEÑA, AGRANDALA PARA SEGUIR VIENDO, GRACIAS.</h1>
+	<!--MENU PRINCIPAL-->
+<div class="h">
+	<div class="cont">
+		<div class="men1">
+			<div id="Mov_m2">
+				<center>
+			<label for="men1">Abrir men&uacute;</label>
+			</center>
+			</div>
+		</div>
+		<center>
+		<div class="menu">
+			<a href="#">Inicio</a>
+			<a href="#">Eolica</a>
+			<a href="#">Solar</a>
+			<a href="#">Hidrolica</a>
+			<a href="#">Creadores</a>
+			<a href="#">Encuesta</a>
+			<a href="parte2.html" class="Siguiente"><abbr title="Al terminar esta parte dar click aqui para seguir">SIGUIENTE</abbr></a>
+		</div>
+	</div>
+</center>
+	<div class="sep"></div>
+	<!---Cierre--->
+	<input type="checkbox" id="men1" name="">
+	<div class="cont-men">
+		<div class="con-men">
+			<nav>
+			<abbr title="CERRAR EL MENÚ"><a><label for="men1" id="men2"><p>CERRAR EL MENÚ</p></label></a></abbr>
+			<a href="#">Inicio</a>
+			<a href="#">Energ&iacute;a Eolica</a>
+			<a href="#">Energ&iacute;a Solar</a>
+			<a href="#">Hidrolica</a>
+			<a href="#">Creadores</a>
+			<a href="#"> Encuesta</a>
+			<a href="parte2.html">SIGUIENTE</a>
+			</nav>
+		</div>
+
+	</div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--FIN DEL MENÚ-->
+<!--Titulo 1-->
+<center>
+	<h1 class="tit1">Energ&iacute;as renovables</h1>
+	<br>
+</center>
+
+<!--Slider-->
+
+<div class="slide" id="slide1">
+	<ul>
+		<li id="s1"><img style="height: 550px;" src="https://i.ibb.co/jMPDqqc/thumb2-solar-panels-4k-solar-energy-alternative-energy-sources-solar-batteries.jpg"></li>
+		<li id="s2"><img style="height: 550px;" src="https://i.ibb.co/5hHtKVk/diga-acqua-2400x1160.jpg"></li>
+		<li id="s3"><img style="height: 550px;" src="https://i.ibb.co/9vb1rFZ/Green-Mountain-Wind-Farm-Fluvanna-2004.jpg"></li>
+		<li id="s4"><img style="height: 550px;" src="https://i.ibb.co/nCWwRCd/ODT-047-Home-banner-encuestas-2.jpg"></li>
+	</ul>
+</div>
+<!--Titulo 1-->
+<blockquote>
+	<h1 id="ttle1" style="text-align: center;">¿ Qu&eacute; son las energ&iacute;as renovables ?</h1>
+	<br>
+	<br>
+	<!--Explicación de que son las energias renovables-->
+
+	<center><p id="txt1">Las energías renovables son aquellas que se obtienen a partir de fuentes naturales que producen energía de forma inagotable e indefinida. Por ejemplo, la energía solar, la energía eólica o la energía mareomotriz son fuentes renovables de energía. También se consideran renovables cuando se obtienen a partir de fuentes que se regeneran con el tiempo de manera natural, como la masa forestal.
+<br>
+Una de las principales ventajas de las energías renovables es que, además de ser inagotables, presentan un nulo o bajo impacto negativo sobre el medio ambiente, por lo que se consideran energías limpias. En la actualidad las energías renovables son una realidad presente en nuestra sociedad y sus beneficios para el medio ambiente son más que evidentes.
+ </p>
+</center>
+	<center>
+	</center>
+
+</blockquote>
+</body>
+</html>
+</blockquote>
